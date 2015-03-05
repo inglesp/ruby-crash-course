@@ -1,3 +1,4 @@
 source "https://rubygems.org"
 
 gem "cucumber"
+gem "win32console", :platforms => "mingw"
