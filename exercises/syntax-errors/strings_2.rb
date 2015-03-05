@@ -1,1 +1,0 @@
-puts "He said: "Hello!"
