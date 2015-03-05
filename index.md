@@ -106,8 +106,8 @@ Things like `10 + 20` and `(10 + 20) * (11 + 21)` are Ruby expressions, and `30`
     name.include?("a")
     name.include?("A")
     "Kate".class
-    "  Kate    ".chomp
-    "Kate".chomp
+    "  Kate    ".strip
+    "Kate".strip
     list = [1, 3, 5, 7, 9]
     list.size
     list.reverse
