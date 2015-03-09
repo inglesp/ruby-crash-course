@@ -300,6 +300,7 @@ Save the file, then from the command line, navigate to the `examples` directory.
     Hello, Peter!
 
 This will run the code in `hello.rb`, executing the code line by line:
+
  * The first line is a comment, and is for human consumption.  It is ignored by Ruby.  In this case, the comment just tells us the name of the file containing the program.
  * The second line displays `What's your name?` on the screen.  `puts` is short for "put string".
  * The third line gets a string from the user, truncates any trailing whitespace, and assigns the name `name` to it.
@@ -446,6 +447,7 @@ We can rewrite our times table code to use a `while` statement and cut down on t
     end
 
 > Question: What happens if you remove the line `i += 1`?
+>
 > Task: Update `nine_times_table_2.rb` so that it asks the user how many multiples of nine it should display.  How would you have implemented that if you did not have access to a `while` loop?
 
 We now know enough Ruby to write a simple guessing game.
