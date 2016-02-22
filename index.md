@@ -1342,7 +1342,7 @@ from the same directory as the Gemfile.  If it's successful, you should see some
 For this training course, we'll only use a handful of third party gems.
 
 
-### Running Ruby: Testing with minitest
+### Running Ruby: Testing with Minitest
 
 One of the benefits of breaking up complicated code into smaller functions is that each function can be tested separately.  We've seen this in `exercises_1.rb` and `exercises_2.rb`, but it's unusual to have code and tests in the same file.  A more usual project layout has product code in a directory called `lib`, and test code in a directory called `test`.  You would typically also have a file called `Rakefile` that contains configuration for running tasks related to the project.
 
@@ -1395,6 +1395,58 @@ You can read more about Rake at http://jasonseifer.com/2010/04/06/rake-tutorial.
 
 All the tests in the test directory make use of `assert_equal`, which is a function from the minitest library.  There are many different kinds of assertions provided by minitest, which are documentated at http://docs.seattlerb.org/minitest/Minitest/Assertions.html.
 
+### Running Ruby: Testing with RSpec
+
+One of the benefits of breaking up complicated code into smaller functions is that each function can be tested separately.  We've seen this in `exercises_1.rb` and `exercises_2.rb`, but it's unusual to have code and tests in the same file.  A more usual project layout has product code in a directory called `lib`, and test code in a directory called `spec`.  You would typically also have a file called `Rakefile` that contains configuration for running tasks related to the project.
+
+In `examples/testing_rspec`, we have the following files:
+
+ * `/Gemfile`
+ * `/Rakefile`
+ * `/lib/functions_1.rb`
+ * `/lib/functions_2.rb`
+ * `/spec/functions_1_spec.rb`
+ * `/spec/functions_2_spec.rb`
+
+The two files in `lib` contain the functions that we defined yesterday (with solutions!) while the two files in `spec` contain the tests.  The one change we've had to make is that the functions are now defined inside a module:
+
+    # lib/functions_1.rb
+    
+    module Functions1
+      extend self
+    
+      def abs(x)
+      ...
+    end
+
+This means that when we load `functions_1.rb` from a spec file, with `require "functions_1"`, we have access to the module `Functions1`, and so we can test the functions that are defined inside the module.  Don't worry too much about what a module is at this stage.
+
+There's a little bit of configuration in this project's `Rakefile` that allow us to use the `rake` command to run all the specs for a project:
+
+    # Rakefile
+    
+    require 'rake/testtask'
+    
+    Rake::SpecTask.new do |t|
+      t.pattern = "spec/*_spec.rb"
+    end
+
+This means we can run `rake spec` from the command line to run all the specs for the project.
+
+    $ rake spec
+    Run options: --seed 23376
+    
+    # Running:
+    
+    ....................
+    
+    Finished in 0.002816s, 7102.2727 runs/s, 20241.4773 assertions/s.
+    
+    20 runs, 57 assertions, 0 failures, 0 errors, 0 skips
+
+You can read more about Rake at http://jasonseifer.com/2010/04/06/rake-tutorial.
+
+All the tests in the specs directory make use of RSpec's expectation syntax.  There are many different kinds of expectations provided by RSpec, which are documentated at https://www.relishapp.com/rspec
 
 ### Running Ruby: Testing with cucumber
 
