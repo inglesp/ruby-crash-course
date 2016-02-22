@@ -7,8 +7,8 @@ layout: main
 
 Last updated: February 2016
 
-Peter Inglesby, peter.inglesby@gmail.com
-Chris Parsons, chris@thinkcodelearn.com
+* Peter Inglesby, peter.inglesby@gmail.com
+* Chris Parsons, chris@thinkcodelearn.com
 
 Framework Training
 
