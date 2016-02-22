@@ -5,9 +5,10 @@ layout: main
 
 # A Ruby Crash Course
 
-Southampton, March 2015
+Last updated: February 2016
 
 Peter Inglesby, peter.inglesby@gmail.com
+Chris Parsons, chris@thinkcodelearn.com
 
 Framework Training
 
