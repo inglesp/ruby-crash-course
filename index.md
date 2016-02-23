@@ -15,16 +15,15 @@ Framework Training
 
 ### About the course
 
-These notes accompany a two day training course, delivered at the Ordnance Survey in March 2015.  The course is a short crash course.  By the end of the course, you will be familiar with the fundamentals of the Ruby programming language. You will have written several programs in Ruby, including simple games and programs to extract data from websites and databases.
+These notes accompany a two day training course delivered at the Ordnance Survey.  The course is a short crash course.  By the end of the course, you will be familiar with the fundamentals of the Ruby programming language. You will have written several programs in Ruby, including simple games and programs to extract data from websites and databases.
 
 The course will be as interactive as possible, and I hope that you will ask as many questions as you need to.  These notes are not meant to be comprehensive, but cover the main points we'll discuss during the course (although we might not have time to cover absolutely everything in the notes).
  
-These notes are available online at http://inglesp.github.io/ruby-crash-course, and you will receive a PDF copy after the course.
-
+These notes are available online at [http://inglesp.github.io/ruby-crash-course](http://inglesp.github.io/ruby-crash-course), and you will receive a PDF copy after the course.
 
 ### Code samples for the course
 
-Most of the code samples in these notes, as well as code for the exercises, are available from https://github.com/inglesp/ruby-crash-course/archive/master.zip.  Solutions will be made available at the end of the course!
+Most of the code samples in these notes, as well as code for the exercises, are available from [https://github.com/inglesp/ruby-crash-course/archive/master.zip](https://github.com/inglesp/ruby-crash-course/archive/master.zip).  Solutions will be made available at the end of the course!
 
 
 ### Running Ruby: Interacting with Ruby via IRB
@@ -508,8 +507,6 @@ It's sometimes useful to break out of a `while` loop early.  We can do that with
     end
 
 > Task: Rewrite `higher_or_lower.rb` to use `while true` and `break`.  How does this allow you to tidy up the code?
->
-> Exercise: In the directory `exercises/syntax-errors`, there are several files called `while_xx.rb`.  Each of these contains a syntax error.  Find the errors, and fix them.
 
 ### Building blocks: Functions
 
