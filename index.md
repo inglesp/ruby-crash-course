@@ -15,11 +15,11 @@ Framework Training
 
 ### About the course
 
-These notes accompany a two day training course delivered at the Ordnance Survey.  The course is a short crash course.  By the end of the course, you will be familiar with the fundamentals of the Ruby programming language. You will have written several programs in Ruby, including simple games and programs to extract data from websites and databases.
+These notes accompany a two day training course first delivered at the Ordnance Survey.  The course is a short crash course.  By the end of the course, you will be familiar with the fundamentals of the Ruby programming language. You will have written several programs in Ruby, including simple games and programs to extract data from websites and databases.
 
 The course will be as interactive as possible, and I hope that you will ask as many questions as you need to.  These notes are not meant to be comprehensive, but cover the main points we'll discuss during the course (although we might not have time to cover absolutely everything in the notes).
  
-These notes are available online at [http://inglesp.github.io/ruby-crash-course](http://inglesp.github.io/ruby-crash-course), and you will receive a PDF copy after the course.
+These notes are available online at [http://inglesp.github.io/ruby-crash-course](http://inglesp.github.io/ruby-crash-course).
 
 ### Code samples for the course
 
